@@ -2,7 +2,7 @@ import countries from "world-countries";
 
 // Let's imagine your colleague already built this component 😃
 
-async function SelectCountry({ defaultCountry, name, id, className }) {
+function SelectCountry({ defaultCountry, name, id, className }) {
   const flag =
     countries.find((c) => c.name.common === defaultCountry)?.flag ?? "";
 
